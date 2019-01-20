@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>analogPresent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-size: 18px;
+            font-family: 'Inconsolata', monospace;
+            color: #3b3b3b;
+            font-weight: 400;
+        }
+
+        .content {
+            margin: 40px auto;
+            width: 650px;
+        }
+
+        .imgCont {
+            width: 160px;
+            height: 160px;
+        }
+
+        .imgCont img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+            /* background-color: tomato; */
+        }
+
+        .container {
+            /* background-color: aqua; */
+            display: flex;
+        
+        }
+
+        .container ul{
+            padding: 0;
+        }
+
+        .headerText {
+            font-size: 2.5em;
+            font-weight: 800;
+          
+        }
+
+        .subHeaderText {
+            font-size: 1.1em;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        /* a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #222;
+            color: #fafafa;
+            text-decoration: none;
+        } */
+
+        .headerText .fab {
+            height: 100%;
+            line-height: 100%;
+            color: #3b3b3b;
+            /* background-color: #fff; */
+        }
+
+
+        .headerText a:hover .fab {
+            color: #6dc9ff;
+            /* background: transparent; */
+            /* background-color: #fff; */
+        }
+
+        .wipList {
+
+            list-style: none;
+        }
+
+        .wipList li {
+            margin-top: 10px;
+            margin-left: -20px;
+        }
+
+        .wipList a {
+            font: 18px/18px "Inconsolata", "Helvetica Neue", sans-serif;
+            color: #3b3b3b;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .wipList a:hover {
+            /* background-color: #222; */
+            color: #6dc9ff;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 1.5px dashed rgba(34, 34, 34, 0.555);
+        }
+
+        @media only screen and (max-width: 600px) {
+          
+
+            .imgCont {
+                margin-top: 30px;
+                width: 90px;
+                height: 90px;
+            }
+
+            .imgCont img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            .content {
+                margin: 20px 20px;
+                width: 400px;
+            }
+
+        }
+
+        .imprintTooltip {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="content">
+
+    <!-- header infos -->
+    <div class="container">
+        <div class="imgCont"> <img src="ap_logo.png" alt=""></div>
+        <ul>
+            <li>
+
+                <div class="headerText">analogPresent
+                </div>
+                <div class="headerText">
+                    <a href="https://twitter.com/analogpresent" target="_blank"><i class="fab fa-twitter fa-fw" style="font-size:24px;"></i></a>
+                    <a href="https://github.com/analogpresent" target="_blank"><i class="fab fa-github fa-fw" style="font-size:24px;"></i></a>
+                    <a href="https://www.youtube.com/channel/UC535utgRnRU5VtLOlmUJvtg" target="_blank"><i class="fab fa-youtube fa-fw"
+                            style="font-size:24px;"></i></a>
+                </div>
+
+            </li>
+            <li>
+                <div class="subHeaderText">my friendly dev blog
+                </div>
+
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- projects -->
+    <div class="container2">
+        <h1>Projects</h1>
+        <ul class="wipList">
+            <li>
+                <a href="#"><i class="fas fa-link fa-fw" style="font-size:18px;"></i> Language Learning App (in closed
+                    beta)</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-link fa-fw" style="font-size:18px;"></i> Android Tutorials for
+                    beginners</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- articles -->
+    <div class="container2">
+        <h1>Articles</h1>
+        <ul class="wipList" id="articles">
+            <li>
+                <a href="#"><i class="fab fa-js fa-fw" style="font-size:18px;"></i> Sensors with JavaScript</a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-js fa-fw" style="font-size:18px;"></i> Create a BMI Calculator with
+                    JavaScript</a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-android fa-fw" style="font-size:18px;"></i> How to use the Snackbar</a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-android fa-fw" style="font-size:18px;"></i> ROOM Example - create a To do
+                    List App</a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-android fa-fw" style="font-size:18px;"></i> LibGDX crash course</a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-android fa-fw" style="font-size:18px;"></i> Android Debugging for
+                    beginners</a>
+
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- footer -->
+    <div class="container2">
+        <h1>Contact me</h1>
+        <ul class="wipList" id="articles">
+            <li>
+                The best way to contact me is via Twitter at <a href="http://twitter.com/analogpresent" target="_blank">@analogPresent</a>.<br><br>
+                <div class="imprintTooltip">Imprint</div>
+
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
